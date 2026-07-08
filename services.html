@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Booklee Technologies services - product engineering, system architecture, web engineering, UI/UX systems, digital growth strategy, and product consulting.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Services | Booklee Technologies</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div id="page-loader" class="page-loader" role="status" aria-label="Loading">
+    <img src="assets/images/booklee-logo.png" alt="" class="page-loader__logo-img" width="640" height="640" decoding="async">
+    <div class="page-loader__bar"><div class="page-loader__progress"></div></div>
+  </div>
+  <div id="scroll-progress" class="scroll-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+  <div id="mouse-gradient" class="mouse-gradient" aria-hidden="true"></div>
+  <div class="bg-canvas" aria-hidden="true"><div id="bg-particles" class="bg-particles"></div></div>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="header__bar">
+      <a href="index.html" class="nav__logo" aria-label="Booklee Technologies home"><img src="assets/images/booklee-logo.png" alt="Booklee Technologies" class="nav__logo-img" width="560" height="560" decoding="async"></a>
+      <nav class="header__pill" aria-label="Main navigation">
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions"><a href="book-call.html" class="btn btn--primary btn--sm">Book a Call</a></div>
+      </nav>
+      <button id="nav-toggle" class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span><span class="nav__toggle-bar"></span></button>
+    </div>
+  </header>
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="book-call.html" class="mobile-menu__link">Book a Call</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span class="breadcrumb__sep">/</span><span aria-current="page">Services</span>
+        </nav>
+        <h1 class="page-hero__title reveal">Our <span class="text-gradient">Capabilities</span></h1>
+        <p class="page-hero__desc reveal">Six core disciplines that cover every stage of your product journey - from strategy through scale.</p>
+      </div>
+    </section>
+
+    <section class="section" id="services-editorial-section">
+      <div class="container">
+        <div class="services-editorial">
+          <nav class="services-sidebar" id="services-sidebar" aria-label="Service navigation">
+            <span class="services-sidebar__label">Services</span>
+            <a href="#svc-product-engineering" class="services-sidebar__link is-active" data-target="svc-product-engineering">Product Engineering</a>
+            <a href="#svc-system-architecture" class="services-sidebar__link" data-target="svc-system-architecture">System Architecture</a>
+            <a href="#svc-web-engineering" class="services-sidebar__link" data-target="svc-web-engineering">Web Engineering</a>
+            <a href="#svc-ui-ux" class="services-sidebar__link" data-target="svc-ui-ux">UI/UX Systems</a>
+            <a href="#svc-digital-growth" class="services-sidebar__link" data-target="svc-digital-growth">Digital Growth Strategy</a>
+            <a href="#svc-product-strategy" class="services-sidebar__link" data-target="svc-product-strategy">Product Strategy &amp; Consulting</a>
+          </nav>
+
+          <div class="services-content">
+            <article class="service-section reveal" id="svc-product-engineering" data-service="product-engineering">
+              <span class="service-section__number">01</span>
+              <h2 class="service-section__title">Product Engineering</h2>
+              <p class="service-section__desc">Full-stack development with maintainable codebases, CI/CD, and observability built in from day one. We embed with your team to ship features faster without sacrificing quality.</p>
+              <div class="service-section__grid">
+                <div>
+                  <h3 class="service-section__block-title">Key Capabilities</h3>
+                  <ul class="service-section__list">
+                    <li>Full-stack application development</li>
+                    <li>API design and integration</li>
+                    <li>Legacy modernization and refactoring</li>
+                    <li>CI/CD pipeline setup</li>
+                    <li>Performance optimization</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="service-section__block-title">Deliverables</h3>
+                  <ul class="service-section__list">
+                    <li>Production-ready feature releases</li>
+                    <li>API documentation (OpenAPI)</li>
+                    <li>Test suites with coverage reports</li>
+                    <li>CI/CD pipeline configuration</li>
+                    <li>Engineering runbooks</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="services/product-engineering.html" class="service-section__cta">Explore Product Engineering <span class="service-section__cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </article>
+
+            <article class="service-section reveal" id="svc-system-architecture" data-service="system-architecture">
+              <span class="service-section__number">02</span>
+              <h2 class="service-section__title">System Architecture</h2>
+              <p class="service-section__desc">Resilient, cloud-native architectures designed for performance, security, and horizontal scale. We help you make infrastructure decisions that compound rather than constrain.</p>
+              <div class="service-section__grid">
+                <div>
+                  <h3 class="service-section__block-title">Key Capabilities</h3>
+                  <ul class="service-section__list">
+                    <li>Cloud-native architecture design</li>
+                    <li>Microservices and event-driven systems</li>
+                    <li>Database design and optimization</li>
+                    <li>Security architecture</li>
+                    <li>Infrastructure as code</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="service-section__block-title">Deliverables</h3>
+                  <ul class="service-section__list">
+                    <li>Architecture decision records</li>
+                    <li>System design documentation</li>
+                    <li>Infrastructure blueprints</li>
+                    <li>Capacity planning models</li>
+                    <li>Security review reports</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="services/system-architecture.html" class="service-section__cta">Explore System Architecture <span class="service-section__cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </article>
+
+            <article class="service-section reveal" id="svc-web-engineering" data-service="web-engineering">
+              <span class="service-section__number">03</span>
+              <h2 class="service-section__title">Web Engineering</h2>
+              <p class="service-section__desc">High-performance web apps with accessibility, SEO, and conversion optimization at the core. Every site ships with Core Web Vitals passing and mobile-first design.</p>
+              <div class="service-section__grid">
+                <div>
+                  <h3 class="service-section__block-title">Key Capabilities</h3>
+                  <ul class="service-section__list">
+                    <li>Progressive web applications</li>
+                    <li>Performance and Core Web Vitals</li>
+                    <li>Accessibility (WCAG compliance)</li>
+                    <li>SEO engineering</li>
+                    <li>CMS integration</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="service-section__block-title">Deliverables</h3>
+                  <ul class="service-section__list">
+                    <li>Responsive, performant web applications</li>
+                    <li>Lighthouse audit reports</li>
+                    <li>Analytics and tracking setup</li>
+                    <li>Technical SEO implementation</li>
+                    <li>Browser compatibility testing</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="services/web-engineering.html" class="service-section__cta">Explore Web Engineering <span class="service-section__cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </article>
+
+            <article class="service-section reveal" id="svc-ui-ux" data-service="ui-ux-systems">
+              <span class="service-section__number">04</span>
+              <h2 class="service-section__title">UI/UX Systems</h2>
+              <p class="service-section__desc">Design systems and interaction patterns that keep experiences consistent across every touchpoint. From Figma to production code, we bridge the gap between design intent and implementation.</p>
+              <div class="service-section__grid">
+                <div>
+                  <h3 class="service-section__block-title">Key Capabilities</h3>
+                  <ul class="service-section__list">
+                    <li>Design system creation</li>
+                    <li>Component library development</li>
+                    <li>Interaction design and prototyping</li>
+                    <li>User research and testing</li>
+                    <li>Figma-to-code handoff</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="service-section__block-title">Deliverables</h3>
+                  <ul class="service-section__list">
+                    <li>Design system documentation</li>
+                    <li>Reusable component libraries</li>
+                    <li>Style guides and brand tokens</li>
+                    <li>Usability test reports</li>
+                    <li>Design-dev workflow guides</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="services/ui-ux-systems.html" class="service-section__cta">Explore UI/UX Systems <span class="service-section__cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </article>
+
+            <article class="service-section reveal" id="svc-digital-growth" data-service="digital-growth-strategy">
+              <span class="service-section__number">05</span>
+              <h2 class="service-section__title">Digital Growth Strategy</h2>
+              <p class="service-section__desc">Data-informed funnels, experimentation, and analytics that tie product work to revenue. We help you build growth loops that scale with your business.</p>
+              <div class="service-section__grid">
+                <div>
+                  <h3 class="service-section__block-title">Key Capabilities</h3>
+                  <ul class="service-section__list">
+                    <li>Growth funnel optimization</li>
+                    <li>A/B testing and experimentation</li>
+                    <li>Analytics architecture</li>
+                    <li>Conversion rate optimization</li>
+                    <li>Marketing technology integration</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="service-section__block-title">Deliverables</h3>
+                  <ul class="service-section__list">
+                    <li>Growth strategy roadmap</li>
+                    <li>Experiment playbooks</li>
+                    <li>Analytics dashboards</li>
+                    <li>Funnel analysis reports</li>
+                    <li>KPI tracking frameworks</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="services/digital-growth-strategy.html" class="service-section__cta">Explore Growth Strategy <span class="service-section__cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </article>
+
+            <article class="service-section reveal" id="svc-product-strategy" data-service="product-strategy-consulting">
+              <span class="service-section__number">06</span>
+              <h2 class="service-section__title">Product Strategy &amp; Consulting</h2>
+              <p class="service-section__desc">Roadmaps, discovery workshops, and technical due diligence to de-risk your next big bet. Senior-led advisory for teams navigating critical product decisions.</p>
+              <div class="service-section__grid">
+                <div>
+                  <h3 class="service-section__block-title">Key Capabilities</h3>
+                  <ul class="service-section__list">
+                    <li>Product discovery workshops</li>
+                    <li>Technical due diligence</li>
+                    <li>Roadmap planning and prioritization</li>
+                    <li>Market and competitor analysis</li>
+                    <li>Executive advisory</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="service-section__block-title">Deliverables</h3>
+                  <ul class="service-section__list">
+                    <li>Product strategy document</li>
+                    <li>Prioritized feature roadmap</li>
+                    <li>Technical assessment report</li>
+                    <li>Workshop outcomes and action items</li>
+                    <li>Ongoing advisory sessions</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="services/product-strategy-consulting.html" class="service-section__cta">Explore Strategy and Consulting <span class="service-section__cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container reveal">
+        <div class="cta-banner cta-banner--featured">
+          <div class="cta-banner__glow" aria-hidden="true"></div>
+          <div class="cta-banner__inner">
+            <span class="cta-banner__eyebrow">Free discovery session</span>
+            <h2 class="cta-banner__title">Not sure which service fits?</h2>
+            <p class="cta-banner__text">Tell us where you are in your product journey - we will recommend the right mix of engineering, design, and strategy for your goals and timeline.</p>
+            <div class="cta-banner__actions">
+              <a href="book-call.html" class="btn btn--primary btn--lg">Book a Call</a>
+              <a href="contact.html" class="btn btn--ghost btn--lg">Send a Message</a>
+            </div>
+            <ul class="cta-banner__perks" aria-label="What you get">
+              <li>30-minute strategy call</li>
+              <li>No obligation</li>
+              <li>Senior-led conversation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__heading">Services</h3>
+          <a href="services/product-engineering.html" class="footer__link">Product Engineering</a>
+          <a href="services/system-architecture.html" class="footer__link">System Architecture</a>
+          <a href="services/web-engineering.html" class="footer__link">Web Engineering</a>
+          <a href="services/ui-ux-systems.html" class="footer__link">UI/UX Systems</a>
+          <a href="services/digital-growth-strategy.html" class="footer__link">Digital Growth Strategy</a>
+          <a href="services/product-strategy-consulting.html" class="footer__link">Product Strategy &amp; Consulting</a>
+        </div>
+        <div>
+          <h3 class="footer__heading">Company</h3>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+          <a href="book-call.html" class="footer__link">Book a Call</a>
+        </div>
+      </div>
+      <div class="footer__final" id="footer-signature">
+        <div class="footer__final-left">
+          <p class="footer__copyright">&copy; <span id="year"></span> Booklee Technologies. All rights reserved.</p>
+          <div class="footer__social-pills">
+            <a href="https://www.linkedin.com/company/booklee-technologies/" class="footer__pill" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/booklee_technologies/" class="footer__pill" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </div>
+        <div class="footer__final-right">
+          <div class="footer__signature-glow" id="footer-booklee-glow" aria-hidden="true"></div>
+          <span class="footer__booklee reveal-stagger" role="img" aria-label="Booklee">
+            <span class="footer__booklee-char" tabindex="0">B</span>
+            <span class="footer__booklee-char" tabindex="0">o</span>
+            <span class="footer__booklee-char" tabindex="0">o</span>
+            <span class="footer__booklee-char" tabindex="0">k</span>
+            <span class="footer__booklee-char" tabindex="0">l</span>
+            <span class="footer__booklee-char" tabindex="0">e</span>
+            <span class="footer__booklee-char" tabindex="0">e</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
