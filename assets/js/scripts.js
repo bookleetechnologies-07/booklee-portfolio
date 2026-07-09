@@ -17,7 +17,6 @@
   const SITE_CONTACT = {
     email: "bookleetechnologies@gmail.com",
     formSubmit: "https://formsubmit.co/ajax/bookleetechnologies@gmail.com",
-    calendly: "https://calendly.com/bookleetechnologies/30mins",
     linkedin: "https://www.linkedin.com/company/booklee-technologies/",
     instagram: "https://www.instagram.com/booklee_technologies/",
   };
@@ -530,32 +529,7 @@
     });
   }
 
-  /* --------------------------------------------------------------------------
-     Calendly — load embed script when present
-     -------------------------------------------------------------------------- */
-  function initCalendly() {
-    const widget = $(".calendly-inline-widget");
-    const calendlyUrl = SITE_CONTACT.calendly;
 
-    if (widget) {
-      if (!widget.dataset.url || widget.dataset.url.includes("your-calendly")) {
-        widget.dataset.url = calendlyUrl;
-      }
-    }
-
-    $$("[data-calendly-link]").forEach((link) => {
-      link.href = widget?.dataset.url || calendlyUrl;
-    });
-
-    if (!widget) return;
-
-    if (!document.querySelector('script[src*="calendly"]')) {
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.body.appendChild(script);
-    }
-  }
 
   /* --------------------------------------------------------------------------
      Sync official email & social links across the site
@@ -1042,7 +1016,6 @@
     initFaq();
     initContactForm();
     initSiteContact();
-    initCalendly();
     initSmoothAnchors();
     initLazyImages();
     initServicesNav();
