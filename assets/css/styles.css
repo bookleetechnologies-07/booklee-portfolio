@@ -2611,7 +2611,7 @@ main {
 .timeline__item::before {
   content: "";
   position: absolute;
-  left: calc(-1 * var(--space-3xl) - 5px);
+  left: calc(-1 * var(--space-3xl) - 3px);
   top: 10px;
   width: 8px; height: 8px;
   background: var(--color-bg-elevated);

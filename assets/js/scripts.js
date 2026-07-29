@@ -727,7 +727,7 @@
     const items = $$(".timeline__item", timeline);
     if (!items.length) return;
 
-    const DOT_OFFSET = 10;
+    const DOT_OFFSET = 14;
     let ticking = false;
     let trackStart = 0;
     let trackHeight = 1;
