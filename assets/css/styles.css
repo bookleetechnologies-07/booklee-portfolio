@@ -1905,7 +1905,7 @@ h1, h2, h3, h4, h5, h6 {
   position: sticky;
   bottom: 0;
   z-index: 1;
-  padding-block: var(--space-4xl) 0;
+  padding-block: var(--space-2xl) 0;
   background: #000000;
   color: rgba(255, 255, 255, 0.88);
 }
@@ -1927,13 +1927,13 @@ main {
 }
 
 .footer .container {
-  padding-bottom: var(--space-2xl);
+  padding-bottom: var(--space-lg);
 }
 
 .footer__grid {
   display: grid;
-  gap: var(--space-2xl);
-  margin-bottom: var(--space-3xl);
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 @media (min-width: 768px) {
@@ -1943,7 +1943,7 @@ main {
 .footer__brand p {
   color: rgba(255, 255, 255, 0.45);
   font-size: var(--text-sm);
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
   max-width: 280px;
   line-height: 1.7;
 }
@@ -1959,14 +1959,14 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(255, 255, 255, 0.35);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
 }
 
 .footer__link {
   display: block;
   font-size: var(--text-sm);
   color: rgba(255, 255, 255, 0.55);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
   transition: color var(--transition-fast);
 }
 
@@ -1981,8 +1981,8 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
-  padding-top: var(--space-xl);
+  gap: var(--space-lg);
+  padding-top: var(--space-lg);
   overflow: hidden;
 }
 

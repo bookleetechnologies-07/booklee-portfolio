@@ -18,7 +18,7 @@
     email: "bookleetechnologies@gmail.com",
     formSubmit: "https://formsubmit.co/ajax/bookleetechnologies@gmail.com",
     linkedin: "https://www.linkedin.com/company/booklee-technologies/",
-    instagram: "https://www.instagram.com/booklee_technologies/",
+    instagram: "https://www.instagram.com/booklee.in/",
   };
 
   /* --------------------------------------------------------------------------

@@ -48,7 +48,7 @@ Official details are centralized in **`assets/js/scripts.js`** (`SITE_CONTACT`) 
 | Email     | `bookleetechnologies@gmail.com` |
 | Calendly  | `https://calendly.com/bookleetechnologies/30mins` |
 | LinkedIn  | `https://www.linkedin.com/company/booklee-technologies/` |
-| Instagram | `https://www.instagram.com/booklee_technologies/` |
+| Instagram | `https://www.instagram.com/booklee.in/` |
 
 The **Book a Call** page embeds Calendly inline. To change the scheduling link later, update `SITE_CONTACT.calendly` in `scripts.js` and the `data-url` on the widget in **`book-call.html`**.
 
