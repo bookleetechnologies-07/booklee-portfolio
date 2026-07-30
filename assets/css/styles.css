@@ -182,14 +182,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-gradient {
   display: inline;
+  padding-right: 0.05em;
+  padding-bottom: 0.05em;
+}
+
+.text-gradient,
+.service-card__number {
   background: var(--gradient-text-shine);
   background-size: var(--gradient-text-size);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientTextShimmer 8s linear infinite;
-  padding-right: 0.05em;
-  padding-bottom: 0.05em;
 }
 
 .about-title-highlight {
@@ -1295,28 +1299,6 @@ h1, h2, h3, h4, h5, h6 {
   right: var(--space-xl);
   line-height: 1;
   letter-spacing: -0.04em;
-  background: var(--gradient-text-shine);
-  background-size: var(--gradient-text-size);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.12;
-  animation: gradientTextShimmer 8s linear infinite;
-}
-
-.section--dark .service-card__number {
-  background: linear-gradient(
-    90deg,
-    #c4b5fd 0%, #d8b4fe 12%, #f0abfc 24%, #f9a8d4 36%,
-    #fbcfe8 48%, #e9d5ff 60%, #a5b4fc 72%, #c4b5fd 84%,
-    #d8b4fe 100%
-  );
-  background-size: var(--gradient-text-size);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0.15;
-  animation: gradientTextShimmer 8s linear infinite;
 }
 
 .service-card__icon {
